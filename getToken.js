@@ -1,7 +1,7 @@
 var request = indexedDB.open("/idbfs");
 request.onsuccess = function(event) {
     event.target.result.transaction("FILE_DATA", "readwrite").objectStore("FILE_DATA").get("/idbfs/a4cde6f7db08abc1da0fa04a69529237/PlayerPrefs").onsuccess = function(e) {
-        new TextEncoder("utf-8"), text = Array.from(event.target.result.contents);
+        text = Array.from(event.target.result.contents);
         var t = new TextDecoder("utf-8").decode(new Uint8Array(text)),
             o = t.indexOf("eyJ");
         var newBookmark = 'javascript:var newToken = "' + t.substring(o, o + 172) + '"; fetch("https://raw.githubusercontent.com/Phantomlnfinity/dashcraft-bookmarklets/refs/heads/main/signIn.js", {cache: "no-cache"}).then(data=>{data.text().then(text=>{eval(text)})});'
