@@ -15,7 +15,7 @@ request.onsuccess = function(event) {
                 <h1>Account Token</h1>
                 <p>Before you give your account token to anybody, make sure that you completely trust whoever you're giving it to. An account token allows somebody to have full, permanent access to your DashCraft account.<br><br><br>If you still want to get your token, here it is:</p>
                 ${DECODED.substring(startIndex, startIndex + 172)}
-                <br><button type="button" onclick="navigator.clipboard.writeText("${DECODED.substring(startIndex, startIndex + 172)}")">Copy token</button>
+                <br><button type="button" class="bookmarklet" onclick="navigator.clipboard.writeText("${DECODED.substring(startIndex, startIndex + 172)}")">Copy token</button>
                 <br><br><br>
                 <p>If you came here for the sign in bookmarklet, drag the box to your bookmark bar.</p>
                 <a class='bookmarklet' href='${newBookmark}'>Drag this to your bookmark bar!</a><br>
