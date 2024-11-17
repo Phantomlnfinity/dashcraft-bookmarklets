@@ -21,7 +21,48 @@ request.onsuccess = function(event) {
                 <a class='bookmarklet' href='${newBookmark}'>Drag this to your bookmark bar!</a><br>
                 <p>If you don't have a bookmark bar, press Ctrl+Shift+B (⌘+Shift+B on Mac)</p>
                 <style>
-                html { height: 100%; width: 100%; color: lightgrey; scrollbar-color: grey black; scrollbar-width: none; font-family:Arial, Helvetica, sans-serif } body { align-content: center; text-align: center; background-color: #1a1a1a; } p { width: min(80%, 600px); } .bookmarklet { background-color: lightgrey; border-radius: 10px; border-width: 0px; padding: 10px; color: black; text-decoration: none; user-select: none; } </style
+                    html {
+                        height: 100%;
+                        width: 100%;
+                        color: lightgrey;
+                        scrollbar-color: grey black;
+                        scrollbar-width: none;
+                        font-family: Arial, Helvetica, sans-serif
+                    }
+
+                    body {
+                        align-content: center;
+                        text-align: center;
+                        background-color: #1a1a1a;
+                    }
+
+                    p {
+                        width: min(80%, 600px);
+                    }
+
+                    .bookmarklet {
+                        background-color: lightgrey;
+                        border-radius: 10px;
+                        border-width: 0px;
+                        padding: 10px;
+                        color: black;
+                        user-select: none;
+                        cursor: pointer;
+                        margin: 4px 2px;
+                    }
+
+                    button {
+                        font-size: 16px;
+                        box-shadow: 0 5px #999;
+                    }
+
+                    button:hover {background-color: rgb(180,180,180)}
+                        button:active {
+                            background-color: rgb(180,180,180);
+                            box-shadow: 0 3px #666;
+                            transform: translateY(2px);
+                        }
+                </style
             </body>
             </html>`
         )
